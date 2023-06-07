@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hw-10-dj"
+version = "0.1.0"
+description = ""
+authors = ["OlegAndrienko <OlegAndrienko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw_10_dj"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.1"
+pymongo = {extras = ["srv", "tls"], version = "^4.3.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
